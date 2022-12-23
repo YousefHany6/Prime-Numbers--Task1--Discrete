@@ -1,0 +1,24 @@
+int n1, n2, i, Number, prime; 
+   Console.Write("Enter First of range: "); 
+   n1 = int.Parse(Console.ReadLine()); 
+   Console.WriteLine(); 
+   Console.Write("Enter  Second of range : "); 
+   n2 = int.Parse(Console.ReadLine()); 
+   Console.WriteLine(); 
+   Console.WriteLine("The prime numbers between {0} and {1} are : ", n1, n2); 
+ 
+   for (Number = n1; Number <= n2; Number++) 
+   { 
+    prime = 0; 
+ 
+    for (i = 2; i < Number; i++) 
+    { 
+     if (Number % i == 0) 
+     { 
+      prime++; 
+ 
+     } 
+    } 
+ 
+    if (prime == 0 && Number != 1) 
+     Console.WriteLine(Number);
